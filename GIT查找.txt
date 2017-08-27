@@ -2,3 +2,11 @@
 在git上快捷查找对应项目下的文件：
 举例：https://github.com/zhl6522/other
 在Code下面按"t"就会开启搜索模式
+
+如果要快捷键接环到"Issues"下(https://github.com/zhl6522/other/issues)，按"gi"
+如果要快捷键接环到"Pull requests"下(https://github.com/zhl6522/other/pull)，按"gp"
+如果要快捷键接环到"Wiki"下(https://github.com/zhl6522/other/wiki)，按"gw"
+如果想在当前控制面板中搜索内容，直接按"s"即可
+按住shift+? 就可以把所有可以操作的快捷键都罗列出来
+
+在对应文件中标注高亮给别人看：打开对应文件 选择查看的那一行，点击行号前面，然后在找到你要的最后一行，按住shift键点行号前面(就相当于建立了锚点)，这样把对应的url再分享给别人，别人就可以看到你标注的高亮内容了。
