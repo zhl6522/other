@@ -1,0 +1,4 @@
+
+在git上快捷查找对应项目下的文件：
+举例：https://github.com/zhl6522/other
+在Code下面按"t"就会开启搜索模式
