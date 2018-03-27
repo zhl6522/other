@@ -1,0 +1,5 @@
+
+Python版本与easygui兼容问题：
+	Python3.3 使用easygui0.96的运行
+	Python3.4 使用easygui0.97.4的运行
+	
