@@ -1,0 +1,6 @@
+
+Python中的super()函数：super机制里可以保证公共父类仅被执行一次，至于执行的顺序，是按照MRO（Method Resolution Order）：方法解析顺序 进行的。
+	http://www.php.cn/python-tutorials-377258.html
+	
+Python函数的参数定义的顺序必须是：必选参数、默认参数、可变参数和关键字参数。（默认参数必须指向不变对象！在python中，strings, tuples, 和numbers是不可更改的对象，而list,dict等则是可以修改的对象。）；
+
