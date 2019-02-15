@@ -1,0 +1,12 @@
+Windows下使用Git简写：
+	~/.gitconfig下不能配置带有git简写的（比如：gst=git status）
+	操作：
+		1.新建 ~/.bashrc文件
+		2.编辑文档
+		alias ga='git add'
+		alias gaa='git add --all'
+		alias gapa='git add --patch'
+		。。。。。。
+		3.保存并source ~/.bashrc即可
+		
+	alias可以查看Git别名配置
