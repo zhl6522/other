@@ -1,0 +1,36 @@
+1、Excel识别手机号运营商：
+=IF(LEFT(A2,3)="134","移动",IF(LEFT(A2,3)="135","移动",IF(LEFT(A2,3)="136","移动",IF(LEFT(A2,3)="137","移动",IF(LEFT(A2,3)="138","移动",IF(LEFT(A2,3)="139","移动",IF(LEFT(A2,3)="147","移动",IF(LEFT(A2,3)="150","移动",IF(LEFT(A2,3)="151","移动",IF(LEFT(A2,3)="152","移动",IF(LEFT(A2,3)="157","移动",IF(LEFT(A2,3)="158","移动",IF(LEFT(A2,3)="159","移动",IF(LEFT(A2,3)="172","移动",IF(LEFT(A2,3)="178","移动",IF(LEFT(A2,3)="182","移动",IF(LEFT(A2,3)="183","移动",IF(LEFT(A2,3)="184","移动",IF(LEFT(A2,3)="187","移动",IF(LEFT(A2,3)="188","移动",IF(LEFT(A2,3)="198","移动",IF(LEFT(A2,3)="130","联通",IF(LEFT(A2,3)="131","联通",IF(LEFT(A2,3)="132","联通",IF(LEFT(A2,3)="145","联通",IF(LEFT(A2,3)="155","联通",IF(LEFT(A2,3)="156","联通",IF(LEFT(A2,3)="166","联通",IF(LEFT(A2,3)="171","联通",IF(LEFT(A2,3)="175","联通",IF(LEFT(A2,3)="176","联通",IF(LEFT(A2,3)="185","联通",IF(LEFT(A2,3)="186","联通",IF(LEFT(A2,3)="133","电信",IF(LEFT(A2,3)="149","电信",IF(LEFT(A2,3)="153","电信",IF(LEFT(A2,3)="173","电信",IF(LEFT(A2,3)="177","电信",IF(LEFT(A2,3)="180","电信",IF(LEFT(A2,3)="181","电信",IF(LEFT(A2,3)="189","电信",IF(LEFT(A2,3)="199","电信","")))))))))))))))))))))))))))))))
+
+2、MySQL识别手机号运营商①：
+SELECT
+		id,buyer_mobile,LEFT(buyer_mobile,3) as m,
+CASE
+WHEN 
+LEFT(buyer_mobile,3) in (130,131,132,145,155,156,166,171,175,176,185,186)
+THEN
+    '联通'
+WHEN LEFT(buyer_mobile,3) IN (134,135,136,137,138,139,147,150,151,152,157,158,159,172,178,182,183,184,187,188,198) 
+THEN
+    '移动'
+WHEN LEFT(buyer_mobile,3) IN (133,149,153,173,177,180,181,189,199) 
+THEN
+		'电信'
+ELSE 
+    '--'
+END AS mobile_new 
+FROM
+    vd_order WHERE buyer_mobile != '';
+	
+3、MySQL识别手机号运营商②：
+SELECT 
+    t.buyer_realname,
+    t.buyer_mobile,
+    CASE
+        WHEN TRIM(t.buyer_mobile) REGEXP '^13[5-9]|^134[0-8]|^15[012789]|^18[23478]|^178|^14[78]|^170[356]|^198|^1440' and length(TRIM(t.buyer_mobile)) = 11 THEN '中国移动'
+        WHEN TRIM(t.buyer_mobile) REGEXP '^13[0-2]|^145|^15[56]|^166|^17[156]|^1704|^1707|^1708|^1709|^171|^18[56]' and length(TRIM(t.buyer_mobile)) = 11 THEN '中国联通'
+        WHEN TRIM(t.buyer_mobile) REGEXP '^133|^149|^153|^1700|^1701|^1702|^177|^173|^18[019]|^199' and length(TRIM(t.buyer_mobile)) = 11 THEN '中国电信'
+        ELSE '未知运营商'
+    END AS provider
+FROM
+    vd_order t
+ where t.buyer_mobile!='' and t.goods_type=2;
