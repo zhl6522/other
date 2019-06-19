@@ -2,7 +2,7 @@ view
 	Toobar
 	Status tar
 	隐藏掉
-	Tool Buttons不隐藏，里面的"Terminal"可以执行artisan命令
+	Tool Buttons不隐藏，里面的"Terminal"可以执行artisan命令（但是不能识别简写命令）
 
 首选项（settings）
 	搜索 bread 勾掉
