@@ -6,6 +6,7 @@ view
 
 首选项（settings）
 	搜索 bread 勾掉
+							
 	
 每打开的页面的tab -> none (Ctrl+e 就可以看到最近打开的)
 
@@ -31,7 +32,7 @@ Settings==>Editor==>General
 	再把“use soft wraps in editor”的勾打上，保存应用
 	
 自动保存,这个功能比较重要，经常会忘记保存代码，导致麻烦,解决的办法是
-? ?File---setting----Apperrance&Behabvior--------systemSetings---右边下面有个Synchronization---勾选Save files automatically if application is idle for 15 sec,时间可以自己设置
+Ctrl+Shift+a---setting----Apperrance&Behabvior--------systemSetings---右边下面有个Synchronization---勾选Save files automatically if application is idle for 15 sec,时间可以自己设置
 	
 	
 单元测试代码(文档是给开发者看的，更友好)，使用驼峰(PSR2规范看着不舒服，可以使用下划线)，操作步骤：
