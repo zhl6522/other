@@ -33,3 +33,5 @@ var_dump(date("Y-m-d", strtotime("first day of next month", strtotime("2017-01-3
 ////输出2017-02-01
 var_dump(date("Y-m-d", strtotime("last day of last month", strtotime("2017-03-31"))));
 ////输出2017-02-28
+===============================
+utf8一个字符最多3字节，只支持BMP这部分的unicode编码区;而utf8mb4则扩展到一个字符最多能有4字节，所以能支持更多的字符集。
