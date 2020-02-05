@@ -2,8 +2,5 @@
 Photoupz	图片去除水印软件
 
 ======================
-
-windows添加ssh-key时应用ssh-add 报错，则应启动 ssh agent bash
-$ ssh-add ~/.ssh/id_rsa
-Could not open a connection to your authentication agent.
-$ ssh-agent bash
+windows 原有基础上生成多个ssh key
+https://blog.csdn.net/php_ajaxx/article/details/104187117
