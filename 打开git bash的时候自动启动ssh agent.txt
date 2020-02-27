@@ -1,4 +1,4 @@
-ÔÚC:/Users/userName/ Ä¿Â¼ÏÂ£¬ĞÂ½¨Ò»¸ö.profileÎÄ¼ş£¬Õ³ÌùÒÔÏÂÄÚÈİ£º
+åœ¨C:/Users/userName/ ç›®å½•ä¸‹ï¼Œæ–°å»ºä¸€ä¸ª.profileæ–‡ä»¶ï¼Œç²˜è´´ä»¥ä¸‹å†…å®¹ï¼š
 ------------.profile--------------
 env=~/.ssh/agent.env
 
@@ -15,15 +15,17 @@ agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
 
 if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
     agent_start
-    ssh-add
+    ssh-add ~/.ssh/id_rsa
+    ssh-add ~/.ssh/id_rsa_gitlab
 elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
-    ssh-add
+    ssh-add ~/.ssh/id_rsa
+    ssh-add ~/.ssh/id_rsa_gitlab
 fi
 
 unset env
 ------------.profile--------------
-git bash´°¿Ú¹Ø±ÕÖØĞÂ´ò¿ª
+git bashçª—å£å…³é—­é‡æ–°æ‰“å¼€
 $ ssh-add -l
 2048 SHA256:qH5KQe3UD/3ovY+2aETMcsdvrLR5Or3A /c/Users/Administrator/.ssh/id_rsa (RSA)
 2048 SHA256:07ism/CJCHjP0em922YLtJe0/Ejgno /c/Users/Administrator/.ssh/id_rsa_gitlab (RSA)
-³öÏÖÕâĞ©Ôò±íÊ¾ssh keyÈ«¾ÖÌí¼ÓÍê³É¡£
+å‡ºç°è¿™äº›åˆ™è¡¨ç¤ºssh keyå…¨å±€æ·»åŠ å®Œæˆã€‚
