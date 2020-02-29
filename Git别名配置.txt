@@ -15,6 +15,11 @@ Windows下使用Git简写：
 			alias glo='git pull origin'
 			alias gpo='git push origin'
 			alias gst='git status'
+			alias ll='ls -l'
+			alias ls='ls -F --color=auto --show-control-chars'			#自定义不同文件显示不同颜色
+			alias php='winpty php.exe'									#Git for Windows下使用 winpty 进行字符流转换（ Git Bash 已自带）
+
 		3.保存并source ~/.bashrc即可
 		
 	alias可以查看Git别名配置
+	
