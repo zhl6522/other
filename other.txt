@@ -1,2 +1,10 @@
 
 Photoupz	图片去除水印软件
+
+======================
+windows 原有基础上生成多个ssh key
+https://blog.csdn.net/php_ajaxx/article/details/104187117
+
+nginx重启前检测命令：
+/usr/local/nginx/sbin/nginx -t
+/usr/local/nginx/sbin/nginx -s reload
