@@ -8,3 +8,8 @@ https://blog.csdn.net/php_ajaxx/article/details/104187117
 nginx重启前检测命令：
 /usr/local/nginx/sbin/nginx -t
 /usr/local/nginx/sbin/nginx -s reload
+
+=====================
+将redis加入到windows的服务中（service和loglevel前都是两个-）开机自启动
+redis-server --service-install redis.windows-service.conf --loglevel verbose
+然后在从服务中吧redis设置成自动(延迟启动)
