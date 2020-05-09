@@ -11,6 +11,7 @@ Windows下使用Git简写：
 			alias gst='git status'
 			alias gcm='git commit -m'
 			alias gco='git checkout'
+			alias gf='git fetch'
 			alias gm='git merge'
 			alias glo='git pull origin'
 			alias gpo='git push origin'
