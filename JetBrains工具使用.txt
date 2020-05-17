@@ -1,0 +1,43 @@
+以 PHPstorm项目编辑器为主，其他JetBrains系列的也支持。
+view
+	Toobar
+	Status tar
+	隐藏掉
+	Tool Buttons不隐藏，里面的"Terminal"可以执行artisan命令（但是不能识别简写命令）
+
+首选项（settings）
+	搜索 bread 勾掉
+							
+	
+每打开的页面的tab -> none (Ctrl+e 就可以看到最近打开的)
+
+Ctrl+e 切换之前打开的文件
+
+Ctrl+h 查找文件里面对应的方法名
+
+Ctrl+Shift+a -> keymap ->左边的search输入内容:live Temp...  
+					Editor
+						live Templates
+							html/xml
+								+ftext、fpass
+							php
+								+class、pub
+file==>settings==>live templates==>选择你要设置的语言，右边的“+”添加规
+html内容快捷键：
+	ftext+Tab
+		Form text input
+
+Alt+1 左侧项目目录展示
+
+Settings==>Editor==>General
+	再把“use soft wraps in editor”的勾打上，保存应用(代码自动换行)
+	
+自动保存,这个功能比较重要，经常会忘记保存代码，导致麻烦,解决的办法是
+Ctrl+Shift+a---setting----Apperrance&Behabvior--------systemSetings---右边下面有个Synchronization---勾选Save files automatically if application is idle for 15 sec,时间可以自己设置
+	
+	
+单元测试代码(文档是给开发者看的，更友好)，使用驼峰(PSR2规范看着不舒服，可以使用下划线)，操作步骤：
+	file==>settings==>Plugins 搜索 CamelCase Browse repositories...安装 
+	对方法按 option+Shift+u 进行变换(Mac);windows下的变换是让人失望的
+	
+	注释中 @test 声明测试
