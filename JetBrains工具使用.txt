@@ -9,7 +9,7 @@ view
 	搜索 bread 勾掉
 							
 	
-每打开的页面的tab -> none (Ctrl+e 就可以看到最近打开的)
+每打开的页面的tab -> none (Ctrl+e 就可以看到最近打开的)[开启方法：settings-->Editor-->General-->Editor Tabs-->Placement改成top]
 
 Ctrl+e 切换之前打开的文件
 
