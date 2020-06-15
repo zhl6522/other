@@ -30,7 +30,7 @@ html内容快捷键：
 Alt+1 左侧项目目录展示
 
 Settings==>Editor==>General
-	再把“use soft wraps in editor”的勾打上，保存应用(代码自动换行)
+	再把“use soft wraps in editor”的勾打上，保存应用(代码自动换行)；[Goland的Soft-wrap files加上“; *.go”]
 	
 自动保存,这个功能比较重要，经常会忘记保存代码，导致麻烦,解决的办法是
 Ctrl+Shift+a---setting----Apperrance&Behabvior--------systemSetings---右边下面有个Synchronization---勾选Save files automatically if application is idle for 15 sec,时间可以自己设置
