@@ -22,6 +22,24 @@ Ctrl+Shift+a -> keymap ->左边的search输入内容:live Temp...
 								+ftext、fpass
 							php
 								+class、pub
+								(
+								/**
+								 * $NAMES$
+								 * @param    $data
+								 * @return   array
+								 */
+								public function $NAME$() {
+								    $END$
+								}
+								)
+							go
+								+ife
+								(
+								if err != nil {
+								 fmt.Printf("$END$\n",$VAR$)
+								 return
+								}
+								)	
 file==>settings==>live templates==>选择你要设置的语言，右边的“+”添加规
 html内容快捷键：
 	ftext+Tab
