@@ -1,0 +1,11 @@
+需要前端在页面功能触发前推送服务通知，用户自主订阅后功能触发模板消息。
+
+ps:
+参数类型需符合微信小程序模板消息文档，data里面的key必须使用（amount1、amount2、time3、thing4、thing5）这些，如下：
+详细内容变动金额{{amount1.DATA}}
+账户余额{{amount2.DATA}}
+变动时间{{time3.DATA}}
+变动原因{{thing4.DATA}}
+备注{{thing5.DATA}}
+
+[微信小程序模板消息文档](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/subscribe-message.html)
