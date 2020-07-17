@@ -1,6 +1,7 @@
 # other
 ```bash
 123
+```bash
 其他工具/知识，这里统一记录。
 
 [Git多平台推送配置1（非小白可以跳过配置1）](https://github.com/zhl6522/other/blob/master/GIT%E5%A4%9A%E5%B9%B3%E5%8F%B0%E6%8E%A8%E9%80%81.txt)
