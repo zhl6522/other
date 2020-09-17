@@ -19,3 +19,5 @@ mysql if elseif语句的使用:
   DELIMITER ;
   INSERT INTO wc_trade (id,mid,`name`,title,img_url,`desc`,support,issystem) 
   SELECT mid as id,mid,`name`,title,logo as img_url,ability as `desc`,pro_salary_grade8(wxapp_support,app_support) as support,issystem FROM `hd_modules`;
+
+多级分类列表：select `id`,`path`,`p_id`,`name`,`level`,`description`,`is_recommend`,`status`,`sort`,`is_deleted`,`create_time`,`update_time` from dx_category where is_deleted="0" and status="1" order by CONCAT(path,id,",") asc;(path:0,14,17,)
