@@ -62,3 +62,5 @@ Ctrl+Shift+a---setting----Apperrance&Behabvior--------systemSetings---右边下�
 	对方法按 option+Shift+u 进行变换(Mac);windows下的变换是让人失望的
 	
 	注释中 @test 声明测试
+	
+方法代码全部收起：'ctrl'+'shift'+'-'，全部展开：'ctrl'+'shift'+'+'
