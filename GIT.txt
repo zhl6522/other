@@ -1,6 +1,7 @@
 拉取远程分支到本地：git fetch <远程主机名> <远程分支名>:<本地分支名>
                   git fetch origin zhl-test:zhl-test
 构建出带tag的版本：go build -tags=v1.6.3 .
+加速下载：export GOPROXY=https://goproxy.io
 ------------------
 Git查找：
 在git上快捷查找对应项目下的文件：
