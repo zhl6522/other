@@ -65,3 +65,4 @@ Ctrl+Shift+a---setting----Apperrance&Behabvior--------systemSetings---右边下�
 	
 方法代码全部收起：'ctrl'+'shift'+'-'，全部展开：'ctrl'+'shift'+'+'
 鼠标所在位置向外扩选：'ctrl'+'w'
+展示当前PHP文件的方法：'Alt'+'7'
