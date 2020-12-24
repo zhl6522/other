@@ -66,3 +66,6 @@ Ctrl+Shift+a---setting----Apperrance&Behabvior--------systemSetings---右边下�
 方法代码全部收起：'ctrl'+'shift'+'-'，全部展开：'ctrl'+'shift'+'+'
 鼠标所在位置向外扩选：'ctrl'+'w'
 展示当前PHP文件的方法：'Alt'+'7'
+代码界面直接提交'ctrl'+'k'，勾选当前的项目 'Before Commit'勾选的取消 'Commit Message'填写提交内容记录 下方可以比对修改的内容
+代码界面直接推送'ctrl'+'shift'+'k'，推送分支到远程
+'VCS'上点击也可以实现功能，文件中右键'Git'也可以
