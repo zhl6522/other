@@ -1,0 +1,50 @@
+回调签名生成过程：
+第一步：将参与签名的字段的值进行升序排列
+例如：client_id:266593511423263;order_id:a12345;update_time:1473238189 进行字典排序。结果为：1473238189, 266593511423263, 'a12345'
+
+第二步：将排序过后的参数，进行字符串拼接
+结果为：1473238189266593511423263a12345
+
+第三步：对第二步连接的字符串进行md5加密
+结果为：bd181f9186db7252e9bec70faa5a5747
+
+由于order_id的长度可能比较大（20位），导致升序排列出问题，转换成字母后排序：
+	protected $_map = [
+		'0' => 'a',
+		'1' => 'b',
+		'2' => 'c',
+		'3' => 'd',
+		'4' => 'e',
+		'5' => 'f',
+		'6' => 'g',
+		'7' => 'h',
+		'8' => 'i',
+		'9' => 'j',
+	];
+
+	public function buildSign($param) 
+	{
+		$arrtest = [
+			(string)$param['client_id'],
+			(string)$param['order_id'],
+			(string)$param['update_time'],
+		];
+		foreach($arrtest as &$value) {
+			$len = strlen($value);
+			for($i=0;$i<$len;$i++) {
+				$value{$i} = $this->_map[$value{$i}];
+			}
+		}
+		sort($arrtest);
+		$map2 = array_flip($this->_map);
+		$arr = [];
+		foreach($arrtest as $key => &$value) {
+			$arr[$key] = "";
+			$len = strlen($value);
+			for($i=0;$i<$len;$i++) {
+				$arr[$key] .= $map2[$value{$i}];
+			}
+		}
+		$sign = md5($arr[0].$arr[1].$arr[2]);
+		return $sign;
+	}

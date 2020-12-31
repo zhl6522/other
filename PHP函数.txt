@@ -10,3 +10,8 @@ strcmp() 函数比较两个字符串。
 <0 - 如果 string1 小于 string2
 >0 - 如果 string1 大于 string2
 
+offsetSet — 为指定索引设定新的值（$res为对象数组）
+foreach ($res as $k => $v) {
+            $v['my_status'] = in_array($v['uniacid'], $uniacidStatusList)?'1':'0';
+            $res->offsetSet($k, $v);
+        }
