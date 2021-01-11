@@ -21,3 +21,5 @@ mysql if elseif语句的使用:
   SELECT mid as id,mid,`name`,title,logo as img_url,ability as `desc`,pro_salary_grade8(wxapp_support,app_support) as support,issystem FROM `hd_modules`;
 
 多级分类列表：select `id`,`path`,`p_id`,`name`,`level`,`description`,`is_recommend`,`status`,`sort`,`is_deleted`,`create_time`,`update_time` from dx_category where is_deleted="0" and status="1" order by CONCAT(path,id,",") asc;(path:0,14,17,)
+
+一个字段中存在都好分割的多个id，查询某一个id是否在里面，并返回这条数据：SELECT * FROM `plus_store` where FIND_IN_SET(1059,uniacid);
