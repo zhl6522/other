@@ -1,7 +1,7 @@
 IDE激活参考地址：https://zhile.io
 
 	Goland激活：https://zhile.io/2018/08/25/jetbrains-license-server-crack.html  (里面百度网盘的文件已过期，使用下面这个)
-	        链接: https://pan.baidu.com/s/1dP1UVuG0GRkXcPlZUGFMhg 提取码: stij
+	        链接: https://pan.baidu.com/s/1dP1UVuG0GRkXcPlZUGFMhg 提取码: stij（本人PHPStorm 2019.1）
 		1. 启动你的IDE，如果上来就需要注册，选择：试用（Evaluate for free）进入IDE。
 		    如果你的IDE试用已过期可以使用reset_eval文件夹内的脚本重置一下。
 		    2. 将 jetbrains-agent.jar 拖进IDE窗口（或者当作IDE插件安装），点 "Restart" 按钮重启IDE。
