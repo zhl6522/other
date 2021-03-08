@@ -70,3 +70,6 @@ Ctrl+Shift+a---setting----Apperrance&Behabvior--------systemSetings---右边下�
 代码界面直接推送'ctrl'+'shift'+'k'，推送分支到远程（按钮冲突的话，'ctrl'+'shift'切换输入法）
 'VCS'上点击也可以实现功能，文件中右键'Git'也可以
 'alt'+'f12'展示出其开发工具的命令行模式，再次执行即可隐藏
+双击SHIFT        # 在当前项目中搜索（文件名、类、方法、函数等等）
+CTRL+SHIFT+F    # 在当前项目/路径中查找字符串（说明：这个快捷键可能和输入法的快捷键有冲突。替换用：CTRL+SHIFT+R）
+CTRL+G          # 转到行
