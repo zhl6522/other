@@ -13,3 +13,7 @@ nginx重启前检测命令：
 将redis加入到windows的服务中（service和loglevel前都是两个-）开机自启动
 redis-server --service-install redis.windows-service.conf --loglevel verbose
 然后在从服务中吧redis设置成自动(延迟启动)
+
+=====================
+composer安装laravel/laravel-admin
+因为我之前电脑上有老版本的composer 在命令行更新composer的时候每次都会提醒"版本比较老，需要访问一个地址" 我忽略了这个消息，后面更新完composer之后<通过使用 Composer 安装 Laravel 安装器>或者下一步<composer create-project laravel/laravel>的时候会报错：内存溢出。修改php配置信息：memory_limit = -1 再次运行，如果还是不可以 建议控制面板->程序和功能 找到composer卸载 重新安装就可以了（安装composer的时候有一个 proxy settings不要配置）
