@@ -1,0 +1,3 @@
+mongo导入导出命令：
+[root@10-9-29-5 public]# mongodump -h 127.0.0.1 -d relations -o /data/wwwroot/dingzhier/guanxiwang/public
+[root@10-9-29-5 public]# mongorestore -h 127.0.0.1:27017 -d relations2 /data/wwwroot/dingzhier/guanxiwang/public/relations
