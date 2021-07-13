@@ -87,6 +87,4 @@ MongoDB（win.dll插件）：1.8.1
 $regex = new \MongoDB\BSON\Regex($content,'i');
 
 =====================
-win10上MongoDB，mongoimport失效的解决办法(https://blog.csdn.net/php_ajaxx/article/details/116297238)
-数据导出：mongoexport -d relations -c relations -o /tmp/relations.log
-数据导入：mongoimport -d relations -c relations --file relations.log
+
