@@ -2,6 +2,11 @@
                   git fetch origin zhl-test:zhl-test
 构建出带tag的版本：go build -tags=v1.6.3 .
 加速下载：export GOPROXY=https://goproxy.io
+
+gco - //切到上一个分支
+gm -  //合并上一个分支
+glo   //拉取远程内容（远程有这个分支）
+gpo   //推送内容到远程（远程有这个分支）
 ------------------
 Git查找：
 在git上快捷查找对应项目下的文件：
