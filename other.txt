@@ -91,3 +91,7 @@ $regex = new \MongoDB\BSON\Regex($content,'i');
 Win Google浏览器快捷键
 Ctrl+W		关闭当前标签页
 Ctrl+Shift+T	重新打开上次关闭的标签页。 谷歌浏览器可记住您关闭的最后 10 个标签页。
+
+=====================
+
+蓝灯翻墙软件：http://lanter.clbug.com/ 下载地址：http://pan.clbug.com/?dir=lan
