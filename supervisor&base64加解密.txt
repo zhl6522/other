@@ -33,6 +33,17 @@ supervisor进程管理
         ];
         return  base64_encode(openssl_encrypt($data, $config['method'],$config['key'], OPENSSL_RAW_DATA , $config['iv']));
     }
+    
+    //解密
+    public function aesDe($data){
+        $config = [
+            'key'	=>	'reter4446fdfgdfgdf123g', //加密key
+            'iv'	=>  "1234123456785678", //保证偏移量为16位
+            'method'	=> 'AES-128-CBC' //加密方式  # AES-256-CBC等
+        ];
+        return openssl_decrypt(base64_decode($data),  $config['method'], $config['key'], OPENSSL_RAW_DATA, $config['iv']);
+    }
+
 }
 AbstractCron.php
 abstract class AbstractCronModel extends AbstractModel {
@@ -55,7 +66,7 @@ abstract class AbstractCronModel extends AbstractModel {
 2、脚本文件：
 	cd /etc/supervisord.d
 	mkdir sso.XXX.com
-	vim sso.XXX.com/cron.user.ini
+	vim sso.XXX.com/cron.user.ini	//此文件说明查看同级文件linux.txt
 		[program:cron.user]
 		command=/bin/php7 index.php request_uri="/cron/crondata"
 		process_name=%(program_name)s
