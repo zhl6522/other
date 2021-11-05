@@ -1,3 +1,6 @@
+IDE下载安装激活：https://github.com/zhl6522/other/blob/master/IDE%E6%BF%80%E6%B4%BB.txt
+-------------------------------------------------------------------------------------
+
 以 PHPstorm项目编辑器为主，其他JetBrains系列的也支持。
 view
 	Toobar
