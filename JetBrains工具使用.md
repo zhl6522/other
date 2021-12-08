@@ -1,4 +1,4 @@
-#IDE下载安装激活：https://github.com/zhl6522/other/blob/master/IDE%E6%BF%80%E6%B4%BB.md
+[IDE下载安装激活](https://github.com/zhl6522/other/blob/master/IDE%E6%BF%80%E6%B4%BB.md)
 -------------------------------------------------------------------------------------
 ##`官方汉化（2020 年开始）`
 ```bash
@@ -8,7 +8,9 @@ Chinese（Simplified） Language Pack/中文语音包
 ```bash
 输入快捷键：Ctrl+Shift+A — 选择Actions — 输入menu 在Main Menu后边打开开关即可。
 ```
-以 PHPstorm项目编辑器为主，其他JetBrains系列的也支持。
+
+##以 PHPstorm项目编辑器为主，其他JetBrains系列的也支持。
+```bash
 view
 	Toobar
 	Status tar
@@ -87,3 +89,4 @@ CTRL+G          # 跳转到对应行
 
 PHPstorm查看文件之后编辑时间及编辑人员：
 	Xcxscgi.php 行数位置右键->Annotate
+```
