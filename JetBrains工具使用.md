@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------------------
 ## `官方汉化（2020 年开始）`
 ```bash
-输入快捷键：Ctrl+Shift+A — 输入plugin - 选择plugin - 搜索里面查找：Chinese（Simplified） Language Pack/中文语音包
+输入快捷键：Ctrl+Shift+A — 输入plugins - 选择Plugins - 搜索里面查找：Chinese（Simplified） Language Pack/中文语音包
 ```
 ## `菜单栏显示`
 ```bash
