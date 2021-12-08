@@ -24,6 +24,6 @@
 	3.保存并source ~/.bashrc即可
 
 alias可以查看Git别名配置
-```
 	
 PS:Git多平台配置后，每次重新启动电脑后 别名配置很可能是打不开的，需要$ source ~/.bashrc
+```
