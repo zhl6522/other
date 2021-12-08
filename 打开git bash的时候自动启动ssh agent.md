@@ -1,3 +1,4 @@
+```bash
 在C:/Users/userName/ 目录下，新建一个.profile文件，粘贴以下内容：
 ------------.profile--------------
 env=~/.ssh/agent.env
@@ -29,3 +30,4 @@ $ ssh-add -l
 2048 SHA256:qH5KQe3UD/3ovY+2aETMcsdvrLR5Or3A /c/Users/Administrator/.ssh/id_rsa (RSA)
 2048 SHA256:07ism/CJCHjP0em922YLtJe0/Ejgno /c/Users/Administrator/.ssh/id_rsa_gitlab (RSA)
 出现这些则表示ssh key全局添加完成。
+```
