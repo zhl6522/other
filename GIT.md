@@ -9,7 +9,6 @@ gm -  //合并上一个分支
 glo   //拉取远程内容（远程有这个分支）
 gpo   //推送内容到远程（远程有这个分支）
 ```
-------------------
 ```bash
 Git查找：
 在git上快捷查找对应项目下的文件：
@@ -24,7 +23,6 @@ Git查找：
 
 在对应文件中标注高亮给别人看：打开对应文件 选择查看的那一行，点击行号前面，然后在找到你要的最后一行，按住shift键点行号前面(就相当于建立了锚点)，这样把对应的url再分享给别人，别人就可以看到你标注的高亮内容了。
 ```
-------------------
 ```bash
 git问题记录：
   git克隆代码：warning: Negative patterns are ignored in git attributes Use '\!' for literal leading exclamation.
