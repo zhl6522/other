@@ -31,3 +31,7 @@ git问题记录：
   原来版本：git version 2.12.2.windows.1 更新版本：git version 2.32.0.windows.2
   如果上面这种方法解决不了问题，看下这种方法：https://github.com/RobinHerbots/Inputmask/issues/1646 + https://stackoverflow.com/questions/46169996/git-what-is-causing-warning-negative-patterns-are-ignored-in-git-attributes
 ```
+```bash
+Git合并时遇到冲突或错误后取消合并
+	git merge --abort
+```
