@@ -1,10 +1,11 @@
-PHP姓名排序：
-		$s0 = mb_substr($s,0,3); //获取名字的姓
-        $s = iconv('UTF-8','gb2312', $s0); //将UTF-8转换成GB2312编码
-        if (ord($s0)>128) { //汉字开头，汉字没有以U、V开头的
-            return $this->getFirstCharter($s0);
-        }else if(ord($s)>=48 and ord($s)<=57){ //数字开头
-            return '*';
+## PHP姓名排序
+```bash
+$s0 = mb_substr($s,0,3); //获取名字的姓
+$s = iconv('UTF-8','gb2312', $s0); //将UTF-8转换成GB2312编码
+if (ord($s0)>128) { //汉字开头，汉字没有以U、V开头的
+    return $this->getFirstCharter($s0);
+}else if(ord($s)>=48 and ord($s)<=57){ //数字开头
+    return '*';
 //            switch(iconv_substr($s,0,1,'utf-8')){
 //                case 1:return "Y";
 //                case 2:return "E";
@@ -17,21 +18,20 @@ PHP姓名排序：
 //                case 9:return "J";
 //                case 0:return "L";
 //            }
-        }else if(ord($s)>=65 and ord($s)<=90){ //大写英文开头
-            return substr($s,0,1);
-        }else if(ord($s)>=97 and ord($s)<=122){ //小写英文开头
-            return strtoupper(substr($s,0,1));
-        }
-        else
-        {
-            //return iconv_substr($s0,0,1,'utf-8');
-             return '*';
-            //中英混合的词语，不适合上面的各种情况，因此直接提取首个字符即可
-        }
-		
---------------------
+}else if(ord($s)>=65 and ord($s)<=90){ //大写英文开头
+    return substr($s,0,1);
+}else if(ord($s)>=97 and ord($s)<=122){ //小写英文开头
+    return strtoupper(substr($s,0,1));
+}
+else
+{
+    //return iconv_substr($s0,0,1,'utf-8');
+     return '*';
+    //中英混合的词语，不适合上面的各种情况，因此直接提取首个字符即可
+}
+```
 
-
+```bash
     function getFirstCharter($str)
     {
         if (empty($str)) {
@@ -459,3 +459,4 @@ PHP姓名排序：
         return $aaa;
 
     }
+   ```
