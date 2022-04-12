@@ -31,3 +31,4 @@ $ ssh-add -l
 2048 SHA256:07ism/CJCHjP0em922YLtJe0/Ejgno /c/Users/Administrator/.ssh/id_rsa_gitlab (RSA)
 出现这些则表示ssh key全局添加完成。
 ```
+[CSDN](https://blog.csdn.net/php_ajaxx/article/details/104187117)
