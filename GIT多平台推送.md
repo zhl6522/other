@@ -5,6 +5,7 @@
 使用GitHub的时候 通过账号密码验证总是失败 这个时候SSH Key就有用武之地了，拉取项目 Use SSH 后续提交时候 避免输入账号密码
 ```
 ## [多平台配置](https://github.com/zhl6522/other/blob/master/%E6%89%93%E5%BC%80git%20bash%E7%9A%84%E6%97%B6%E5%80%99%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8ssh%20agent.md)
+## 多平台配置后的操作
 ```bash
 多平台推送提交，不用命令行敲打即可完成：
 代码界面直接提交'ctrl'+'k'，勾选当前的项目(新增文件需要点击'Unversioned Files') 'Before Commit'勾选的取消 'Commit Message'填写提交内容记录 下方可以比对修改的内容
