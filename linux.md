@@ -8,6 +8,7 @@ grep -r "查询内容"  文件目录
 等于：find 文件目录  -type f |xargs grep "查询内容"
 
 ## Supervisor status
+```bash
 cd /etc/supervisord.d/
 mkdir intreface.molixcx.com
 vim interface.queuesql.ini
@@ -58,3 +59,4 @@ systemctl restart supervisord.service
             Log::write(LOG_ERR, "\n\n".$e->getMessage() . "\n" . $e->getTraceAsString(), $e->getLine(), $e->getFile());
             echo $this->ApiResult()->setError(Config::module('code.2000'), 2000);
         }
+```
