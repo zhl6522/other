@@ -1,3 +1,4 @@
+```
 bcdiv	将二个高精确度数字相除。
 bcmul	将二个高精确度数字相乘。
 array_intersect	array_intersect() 函数用于比较两个（或更多个）数组的键值，并返回交集。
@@ -9,4 +10,4 @@ strcmp() 函数比较两个字符串。
 0 - 如果两个字符串相等
 <0 - 如果 string1 小于 string2
 >0 - 如果 string1 大于 string2
-
+```
