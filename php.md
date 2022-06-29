@@ -57,7 +57,7 @@ foreach($b as $item) {
 	...
 }
 return ['a' => $a, 'b' => $b];	
-//$a的数据会出问题(下方链接就是解释)
+//输出$a的数据会出问题(下方链接 [php的传址调用] 就是解释)
 ```
 [php的传址调用](https://blog.csdn.net/weixin_33711795/article/details/115173586)
 
