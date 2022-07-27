@@ -8,6 +8,11 @@
 ## 多平台配置后的操作
 ```bash
 多平台推送提交，不用命令行敲打即可完成：
-代码界面直接提交'ctrl'+'k'，勾选当前的项目(新增文件需要点击'Unversioned Files') 'Before Commit'勾选的取消 'Commit Message'填写提交内容记录 下方可以比对修改的内容
+代码界面直接提交'ctrl'+'k'，勾选当前的项目(新增文件需要点击'Unversioned Files')
+'Before Commit'勾选的取消
+'Commit Message'填写提交内容记录 下方可以比对修改的内容
 代码界面直接推送'ctrl'+'shift'+'k'，推送分支到远程<"main->origin:main这里的origin点击换成github:main">（按钮冲突的话，'ctrl'+'shift'切换输入法）
 ```
+
+ps:
+后续可能出现的问题：如果有添加Git简写,Git命令简写识别不了，需要每次打开窗口执行 source ~/.bashrc
