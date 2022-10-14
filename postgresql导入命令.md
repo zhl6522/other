@@ -1,3 +1,4 @@
+```bash
 root@test:~# cat auto_import.sh
 #!/bin/bash
 sudo -u appuser scp job1:cinema-data-backup/cinema-app.gz /data/
@@ -13,3 +14,4 @@ fi
 mv /data/cinema-app /data/cinema-app.bak
 #composer dumpautoload
 sudo -u appuser php /var/www/cinema-admin-show/artisan db:seed --class=AuthAdmin
+```
